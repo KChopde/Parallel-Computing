@@ -1,0 +1,56 @@
+Script started on Sun 10 Dec 2023 06:22:20 PM EST
+]0;hq0656@warrior:~[?1034h[hq0656@warrior ~]$ exitsrun -q secondary -N 1 -n 32 -t 01:10:0 --pty bash[1P[1@4
+srun: job 25495915 queued and waiting for resources
+srun: job 25495915 has been allocated resources
+]0;hq0656@warrior:~[?1034h[hq0656@asx13 ~]$ exitsrun -q secondary -N 1 -n 32 -t 01:10:0 --pty bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o SequentialQuickSort SequentialQuickSort.c
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ gcc -o SequentialQuickSort SequentialQuickSort.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksrun -q secondary -N 1 -n 32 -t 01:10:0 --pty bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./SequentialQuickSort
+
+ The elapsed time for array with 2^16 elements is 0.090000 seconds 
+ The elapsed time for array with 2^20 elements is 20.190000 seconds 
+ The elapsed time for array with 2^24 elements is  5130.900000 seconds ]0;hq0656@warrior:~[hq0656@asx13 ~]$ 
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ ./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o SequentialQuickSort SequentialQuickSort.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksrun -q secondary -N 1 -n 32 -t 01:10:0 --pty bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o SequentialQuickSort SequentialQuickSort.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kmpirun -n 8 ./ModifiedOddEvenSort 16777216[1P048576[2P65536[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cake[Kpirun -n 8 ./OddEvenSort 16777216[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmpirun -n 8 ./OddEvenSort 1048576[2P65536[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cake[K
+/opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/bin/mpicc -o ModifiedOddEvenSort ModifiedOddEvenSort.c
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ make./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o SequentialQuickSort SequentialQuickSort.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksrun -q secondary -N 1 -n 32 -t 01:10:0 --pty bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o SequentialQuickSort SequentialQuickSort.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kmpirun -n 8 ./ModifiedOddEvenSort 16777216[1P048576[2P65536
+Maximum Execution Time: 0.009267 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./ModifiedOddEvenSort 65536[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cake[K./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o SequentialQuickSort SequentialQuickSort.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksrun -q secondary -N 1 -n 32 -t 01:10:0 --pty bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksrun -q secondary -N 1 -n 32 -t 01:10:0 --pty bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kgcc -o SequentialQuickSort SequentialQuickSort.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27P./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[Kpirun -n 8 ./ModifiedOddEvenSort 65536[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kmpirun -n 8 ./ModifiedOddEvenSort 65536[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cake[K./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o SequentialQuickSort SequentialQuickSort.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksrun -q secondary -N 1 -n 32 -t 01:10:0 --pty bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o SequentialQuickSort SequentialQuickSort.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kmpirun -n 8 ./ModifiedOddEvenSort 16777216[1P048576[2P65536
+Maximum Execution Time: 0.009329 seconds
+^[[A^[[A        ]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./ModifiedOddEvenSort 65536
+Maximum Execution Time: 0.008724 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./ModifiedOddEvenSort 65536[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cake[K./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o SequentialQuickSort SequentialQuickSort.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksrun -q secondary -N 1 -n 32 -t 01:10:0 --pty bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o SequentialQuickSort SequentialQuickSort.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kmpirun -n 8 ./ModifiedOddEvenSort 16777216[1P048576
+Maximum Execution Time: 0.136261 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./ModifiedOddEvenSort 1048576
+Maximum Execution Time: 0.131186 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./ModifiedOddEvenSort 1048576
+Maximum Execution Time: 0.134146 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./ModifiedOddEvenSort 1048576[2P65536[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cake[K./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o SequentialQuickSort SequentialQuickSort.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksrun -q secondary -N 1 -n 32 -t 01:10:0 --pty bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o SequentialQuickSort SequentialQuickSort.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kmpirun -n 8 ./ModifiedOddEvenSort 16777216
+Maximum Execution Time: 2.355798 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./ModifiedOddEvenSort 16777216
+Maximum Execution Time: 2.317574 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./ModifiedOddEvenSort 16777216
+Maximum Execution Time: 2.276588 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./ModifiedOddEvenSort 16777216[1P048576[2P65536[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cake[K./SequentialQuickSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -o SequentialQuickSort SequentialQuickSort.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksrun -q secondary -N 1 -n 32 -t 01:10:0 --pty bash[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmake
+/opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/bin/mpicc -o OddEvenSort OddEvenSort.c
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ makepirun -n 8 ./ModifiedOddEvenSort 16777216[1P048576[2P65536[1P[1P[1P[1P[1P[1P[1P[1P
+Maximum Execution Time: 0.004402 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./OddEvenSort 65536
+Maximum Execution Time: 0.003424 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./OddEvenSort 65536
+Maximum Execution Time: 0.003599 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./OddEvenSort 65536[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cake[Kpirun -n 8 ./ModifiedOddEvenSort 16777216[C[1P[1P[1P[1P[1P[1P[1P[1PModifiedOddEvenSort 1048576[2P655361048576[C[1P[1P[1P[1P[1P[1P[1P[1P
+Maximum Execution Time: 0.064545 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./OddEvenSort 1048576
+Maximum Execution Time: 0.057037 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./OddEvenSort 1048576
+Maximum Execution Time: 0.065199 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./OddEvenSort 1048576[2P65536[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cake[Kpirun -n 8 ./OddEvenSort 16777216
+Maximum Execution Time: 1.100914 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./OddEvenSort 16777216
+Maximum Execution Time: 1.088147 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ mpirun -n 8 ./OddEvenSort 16777216
+Maximum Execution Time: 1.092742 seconds
+]0;hq0656@warrior:~[hq0656@asx13 ~]$ exit
+exit
+]0;hq0656@warrior:~[hq0656@warrior ~]$ exit
+exit
+
+Script done on Sun 10 Dec 2023 08:00:03 PM EST
